@@ -1,0 +1,23 @@
+/* inputs login */
+.input-connect{
+    width: 95%; 
+    height: 55px; 
+    border: 0;
+    border-bottom: 1px solid #333; 
+    border-radius: 10px; 
+}
+
+
+@media (max-width: 992px) {
+    /* mostrar contraseña */
+    .view-password{
+        margin-left: auto !important;
+    }
+
+    /* position links */
+    .position-links{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+}

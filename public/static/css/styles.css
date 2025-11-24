@@ -1,0 +1,243 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+body{
+    /* background: linear-gradient(to right, #e8e9e9,#d5dbdc, #dee0e1); */
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+/* seccion header nav*/
+/*Links situados de la parte superior */
+.container-header{
+    float: right; /* Hace que el elemento flote a la derecha */
+    font-weight: 600;
+    margin-left: auto;
+    padding: 4px;
+    position: relative;
+}
+.link-item{
+    color: #22292b;
+    font-size: 0.8em;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* icono disabled */
+.icon-web-sesion{
+    display: none;
+}
+
+.heart-style-responsive{
+    margin-left: 14px;
+}
+
+.cart-style-responsive{
+    margin-left: 14px;
+}
+
+.user-style-responsive{
+    display: none;
+}
+
+/* search nav */
+
+/* btn close movile disabled */
+.btn-close{
+    display: none;
+}
+
+/* end search nav */
+.search-web{
+    background-color: #f2f2f2;
+    border: 0;
+    border-radius: 18px;
+    font-weight: 600;
+    opacity: 90%;
+}
+.search-web:focus{
+    box-shadow: none;
+    background-color: #f2f2f2;
+    border-color: #ced4da; /* También puedes cambiar el color del borde aquí si lo deseas */
+    outline: none; 
+}
+.search-web::placeholder{
+    color: #9c9c9c;
+}
+
+/* username droptown */
+.droptown-movile{
+    display: none;
+}
+/* *--------------------------------------------------------------
+# Carrusel de texto
+--------------------------------------------------------------*/
+.carousel{
+    background-color: #39424406;
+    position: relative;
+    height: auto;
+}
+.carousel-inner{
+    font-size: 0.7em;
+    text-align: center;
+    justify-items: center;
+}
+
+/* *--------------------------------------------------------------
+# Active menu
+--------------------------------------------------------------*/
+
+.nav-tabs-bordered .nav-link {
+    margin-bottom: -2px;
+    border: none;
+    color: #2c384e;
+  }
+  
+.nav-tabs-bordered .nav-link:hover,
+.nav-tabs-bordered .nav-link:focus {
+color: #4154f1;
+}
+  
+.nav-tabs-bordered .nav-link.active {
+    background-color: #fff;
+    color: #4154f1;
+    border-bottom: 2px solid #4154f1;
+}
+
+.active-route{
+    background-color: #e5e5e5 !important;
+}
+
+/* *--------------------------------------------------------------
+# Avatar account profile user
+--------------------------------------------------------------*/
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#btn_avatar_edit:hover .overlay {
+    opacity: 1;
+}
+
+.avatar-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.avatar-option {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.avatar-option:hover {
+    border-color: #000;
+}
+
+#main_avatar {
+    border-radius: 50%;
+}
+
+.bi-check-circle-fill {
+    font-size: 2rem;
+    color: white;
+}
+
+/* Animación de desaparición */
+@keyframes dropFadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(100%); }
+}
+
+.drop-fade-out {
+    animation: dropFadeOut 1s ease forwards;
+}
+
+
+/* *--------------------------------------------------------------
+# Overlay video home
+--------------------------------------------------------------*/
+
+.videoSection {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+}
+.videoSection .containerVideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0 !important;
+}
+.overlay-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1 !important;
+}
+.overlay-section a {
+    text-decoration: none;
+    color: white;
+}
+.overlay-section .title-home {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.overlay-section .text-home {
+    font-size: 1.2rem;
+}
+
+.video-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 2;
+}
+
+
+/* *--------------------------------------------------------------
+# producto single 
+--------------------------------------------------------------*/
+
+.btn-shadow-product {
+    padding: 10px 20px;
+}
+
+.btn-shadow-product:hover {   
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.308);
+    transition: box-shadow 0.8s;
+    border-radius: 8px;
+    padding: 10px 20px;
+}

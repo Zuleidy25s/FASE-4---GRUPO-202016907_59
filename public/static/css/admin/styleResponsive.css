@@ -1,0 +1,18 @@
+@media (max-width: 992px) {
+    .sidebar{
+        width: 300px;
+        top: 70px;
+    }
+
+    .sidebar.collapsed {
+        width: 0;
+    }
+    
+    /* Toggle Button */
+    #sidebar-toggle-btn {
+        position: fixed;
+        top: 15px;
+        left: 80px;
+    }
+
+}

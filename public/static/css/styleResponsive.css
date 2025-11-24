@@ -1,0 +1,93 @@
+@media (max-width: 992px) {
+    /* header display none */
+    .container-header{
+        display: none;
+    }
+
+    .search-web{
+        display: none;
+    }
+    /* end */
+
+    /* posicion btn toogler */
+    .navbar-light .navbar-toggler{
+        border: 0;
+        position: absolute;
+        right: 10px;
+        margin-right: 8px;
+    }
+
+    /* btn close nav */
+    .btn-close{
+        display: flex;
+        position: fixed;
+        top: 25px;
+        right: 35px;
+    }
+
+    /* fondo ventana */
+    .navbar .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Inicialmente fuera de la pantalla */
+        width: 60%;
+        height: 100%;
+        background-color: #fff; /* Fondo blanco */
+        transition: right 0.3s ease;
+        z-index: 1000; /* Asegurar que esté encima de todo */
+    }
+
+    .nav-movile{
+        padding: 20px;
+        margin-top: 3rem;
+    }
+    /* end fondo ventana */
+
+    .container-movile{
+        display: none !important;
+    }
+
+    /* posicion ventana */
+    .navbar .navbar-collapse.show {
+        right: 0; /* Aparece desde la derecha */
+    }
+    
+    /* icons style */
+    .heart-style-responsive{
+        padding-right: 10px;
+    }
+    .cart-style-responsive{
+        padding-right: 24px;
+    }
+    .user-style-responsive{
+        display: flex;
+        padding-right: 35px;
+    }
+
+    /* style name user */
+    .prop-user{
+        font-size: 15px !important;
+    }
+
+    .droptown-movile{
+        display: flex;
+    }
+    
+}
+/* overlay home video */
+@media (max-width: 768px) {
+    .overlay-section {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .overlay-section .title-home {
+        font-size: 2rem;
+        margin-left: 0 !important;
+        margin-bottom: 10px;
+    }
+    .overlay-section .text-home {
+        margin-left: 5px !important;
+        font-size: 1.2rem;
+    }
+}
